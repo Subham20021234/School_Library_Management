@@ -60,34 +60,34 @@ School_Library_Management/
 
 ## Configure MySQL Database
 
-2.Create a database school_library.
+2.Create a database school_library.  
 
-3.Create a table books:
+3.Create a table books:  
 CREATE TABLE books (
-  id INT PRIMARY KEY AUTO_INCREMENT,
-  name VARCHAR(100) NOT NULL,
-  price DOUBLE,
-  author VARCHAR(100),
-  status VARCHAR(50),
-  borrowed_date DATE,
-  borrowed_days INT
+  id INT PRIMARY KEY AUTO_INCREMENT,  
+  name VARCHAR(100) NOT NULL,  
+  price DOUBLE,  
+  author VARCHAR(100),  
+  status VARCHAR(50),  
+  borrowed_date DATE,  
+  borrowed_days INT  
 );
 
-4.Update database credentials
-In BookDAO.java, update:
+4.Update database credentials  
+In BookDAO.java, update:  
 
-private String jdbcURL = "jdbc:mysql://localhost:3306/school_library";
-private String jdbcUsername = "root";
-private String jdbcPassword = "your-password";
+private String jdbcURL = "jdbc:mysql://localhost:3306/school_library";  
+private String jdbcUsername = "root";  
+private String jdbcPassword = "your-password";  
 
-5.Deploy to Tomcat
+5.Deploy to Tomcat  
 
-Right-click project → Run on Server
+Right-click project → Run on Server  
 
-6.Access the Application at:
-http://localhost:8080/SchoolLibrary/
+6.Access the Application at:  
+http://localhost:8080/SchoolLibrary/  
 
-📄 License
+📄 License  
 
 This project is for educational purposes. You may modify and use it in your own institution.
 
